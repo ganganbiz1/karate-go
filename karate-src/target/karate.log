@@ -1,15 +1,19 @@
-12:53:22.892 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
-12:53:23.270 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
-12:53:23.270 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
-12:53:23.385 [pool-1-thread-1] DEBUG com.intuit.karate - request:
-1 > GET http://localhost:3000/api1
+16:59:59.811 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+16:59:59.815 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+17:00:00.203 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+17:00:00.203 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+17:00:00.203 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+17:00:00.203 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+17:00:00.203 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+17:00:00.323 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api3
 1 > Host: localhost:3000
 1 > Connection: Keep-Alive
 1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
 1 > Accept-Encoding: gzip,deflate
 
 
-12:53:23.385 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+17:00:00.323 [pool-1-thread-2] DEBUG com.intuit.karate - request:
 1 > GET http://localhost:3000/api2
 1 > Host: localhost:3000
 1 > Connection: Keep-Alive
@@ -17,18 +21,144 @@
 1 > Accept-Encoding: gzip,deflate
 
 
-12:53:23.406 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 21
+17:00:00.323 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api1
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:00:00.323 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api4
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:00:00.323 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:3000/api5
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:00:00.345 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 20
 1 < 200
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Sun, 22 Jan 2023 03:53:23 GMT
+1 < Date: Sun, 22 Jan 2023 08:00:00 GMT
+1 < Content-Length: 18
+{"message":"Get5"}
+
+17:00:00.345 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 20
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 22 Jan 2023 08:00:00 GMT
+1 < Content-Length: 18
+{"message":"Get3"}
+
+17:00:00.345 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 20
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 22 Jan 2023 08:00:00 GMT
 1 < Content-Length: 18
 {"message":"Get1"}
 
-12:53:23.406 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 21
-1 < 200
+17:00:00.345 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 20
+1 < 400
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Sun, 22 Jan 2023 03:53:23 GMT
+1 < Date: Sun, 22 Jan 2023 08:00:00 GMT
 1 < Content-Length: 18
 {"message":"Get2"}
 
-12:53:23.736 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:examples/users/users.feature
+17:00:00.345 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 20
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 22 Jan 2023 08:00:00 GMT
+1 < Content-Length: 18
+{"message":"Get4"}
+
+17:00:00.382 [pool-1-thread-4] INFO  com.intuit.karate - karate.env system property was: null 
+17:00:00.382 [pool-1-thread-5] INFO  com.intuit.karate - karate.env system property was: null 
+17:00:00.382 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+17:00:00.382 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+17:00:00.383 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+17:00:00.384 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3000/apipost2
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:00:00.384 [pool-1-thread-5] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3000/apipost3
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:00:00.384 [pool-1-thread-4] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3000/apipost5
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:00:00.384 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3000/apipost1
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:00:00.385 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > POST http://localhost:3000/apipost4
+1 > Host: localhost:3000
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 > Accept-Encoding: gzip,deflate
+
+
+17:00:00.387 [pool-1-thread-5] DEBUG com.intuit.karate - response time in milliseconds: 3
+1 < 500
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 22 Jan 2023 08:00:00 GMT
+1 < Content-Length: 19
+{"message":"Post3"}
+
+17:00:00.387 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 3
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 22 Jan 2023 08:00:00 GMT
+1 < Content-Length: 19
+{"message":"Post2"}
+
+17:00:00.388 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 2
+1 < 403
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 22 Jan 2023 08:00:00 GMT
+1 < Content-Length: 19
+{"message":"Post4"}
+
+17:00:00.388 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 3
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 22 Jan 2023 08:00:00 GMT
+1 < Content-Length: 19
+{"message":"Post1"}
+
+17:00:00.388 [pool-1-thread-4] DEBUG com.intuit.karate - response time in milliseconds: 3
+1 < 200
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 22 Jan 2023 08:00:00 GMT
+1 < Content-Length: 19
+{"message":"Post5"}
+
+17:00:00.713 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (1 remaining) classpath:examples/gets/gets.feature
+17:00:00.765 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:examples/posts/posts.feature

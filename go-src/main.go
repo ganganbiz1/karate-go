@@ -24,7 +24,7 @@ func main() {
 		})
 	})
 	r.GET("/api2", func(c *gin.Context) {
-		c.JSON(200, gin.H{
+		c.JSON(400, gin.H{
 			"message": api.Get2(),
 		})
 	})
@@ -54,12 +54,12 @@ func main() {
 		})
 	})
 	r.POST("/apipost3", func(c *gin.Context) {
-		c.JSON(200, gin.H{
+		c.JSON(500, gin.H{
 			"message": api.Post3(),
 		})
 	})
 	r.POST("/apipost4", func(c *gin.Context) {
-		c.JSON(200, gin.H{
+		c.JSON(403, gin.H{
 			"message": api.Post4(),
 		})
 	})
