@@ -1,4 +1,4 @@
-package examples.gets;
+package examples.posts;
 
 import com.intuit.karate.junit5.Karate;
 

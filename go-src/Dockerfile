@@ -1,7 +1,7 @@
 ##
 ## Build
 ##
-FROM golang:1.18-alpine AS build
+FROM golang:1.18-alpine3.15 AS build
 
 WORKDIR /app
 
@@ -17,7 +17,7 @@ RUN go build -o /app/go-src
 ##
 ## Deploy
 ##
-FROM golang:1.18-alpine
+FROM alpine:3.15
 
 WORKDIR /app
 
